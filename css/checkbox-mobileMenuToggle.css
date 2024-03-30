@@ -1,0 +1,81 @@
+
+#headerMobileMenu {
+    padding-right: 0.5rem;
+}
+
+
+#headerMobileMenu label {
+    position: relative;
+    font-size: 1.5rem;
+}
+
+#headerMobileMenu label#menuPlus::after {
+    position: absolute;
+    content: '+';
+    top: -7.5px;
+    right: -14px;
+    
+}
+
+
+
+#headerMobileMenu input[type=checkbox]#headerMobileMenuToggle {
+    -webkit-appearance:none;
+    appearance: none;
+    position: absolute;
+    z-index: 4;
+    top: 1rem;
+    width:84px;
+    height:30px;
+    background:transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#headerMobileMenu input[type=checkbox]#headerMobileMenuToggle:checked + label#menuPlus::after {
+    position: absolute;
+    content: '-';
+    top: -11px;
+    right: -13px;
+    font-size: 2rem;
+    
+}
+
+.menuSlideOut {
+ 
+    position: absolute;
+    left: -380px;
+    top: 3.84rem;
+    min-width: 375px;
+    height: 800px;
+    background-color: #F7FFF7;
+    
+    border-right: 1px solid black;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+
+
+#headerMobileMenu input[type=checkbox]#headerMobileMenuToggle:checked ~ .menuSlideOut {
+    left: 0;
+}
+
+.menuSlideOut-row {
+    padding: 0.5em;
+    border-bottom: 1px solid black;
+}
+
+.menuSlideOut-row.flexed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuSlideOut-row.flexed span#bigPlus::after {
+    display: inline-block;
+    content: '+';
+    font-weight: 700;
+    font-size: 1.5rem;
+}
