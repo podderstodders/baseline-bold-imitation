@@ -10,3 +10,8 @@ between 1026px - 1126px, and I can't set overflow: scroll or overflow: hidden fo
 
 For the mobile menu, when toggles, typically takes the full-height of the screen. Since I'm using toggle, I can't have the menu blocking the toggle checkbox. Hence, why the different modals are beneath the checkbox. That is all. 
 
+Toggle functionalities:
+1. Header Artists dropdown menu 
+2. Header Mobile Menu sliding 
+3. Footer currency toggle 
+4. Cart Menu Toggle (in progress)
