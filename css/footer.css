@@ -1,0 +1,218 @@
+
+.footer {
+    
+}
+/* start of footer-row--subscribe block */
+.footer-row.footer-row--subscribe {
+    
+    background-color: rgb(97, 255, 92);
+    padding: 1em 0.5em;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.footer-row.footer-row--subscribe p {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.subscribe-form input[type=email] {
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+
+    padding-top: 5px;
+    font-weight: 800;
+}
+.subscribe-form input[type=email]::placeholder {
+    font-weight: 800;
+    opacity: 1;
+}
+.subscribe-form input[type=email]:focus {
+    outline: 3px solid white;
+ 
+}
+
+.subscribe-form .subscribe-button {
+    margin-top: 0.5rem;
+}
+
+.subscribe-button a {
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 9px;
+    white-space: nowrap;
+}
+
+.subscribe-button span#subscribeArrow {
+    font-size: 1.3rem;
+}
+
+.subscribe-button a:hover {
+    color: white;
+}
+
+/* end of footer-row--subscribe block */
+
+/* start of footer-row--links block */
+.footer-row.footer-row--links {
+    display: grid;
+    font-size: 1.2rem;
+}
+
+.footer-row.footer-row--links > * {
+    padding: 1rem;
+}
+
+.footer-row.footer-row--links .links-statement {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-row.footer-row--links .links-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-row.footer-row--links .links-list ul a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footer-row.footer-row--links .links-list ul a:hover {
+    color: rgb(255, 10, 130);
+}
+
+.footer-row.footer-row--links > * {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+}
+
+/* end of footer-row -- links */
+
+/* start of footer-row -- copyright */
+
+.footer-row--copyright {
+    position: relative;
+    text-transform: uppercase;
+    padding: 1em 0.5em;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+.footer-row--copyright .copyright--lhs p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-row--copyright .copyright--rhs label {
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+.footer-row--copyright .copyright--rhs label::after {
+    content: '';
+    padding-left: 13px;
+}
+
+.footer-row--copyright .copyright--rhs {
+    position: relative;
+}
+
+input[type=checkbox]#copyrightToggle {
+    -webkit-appearance:none;
+    appearance: none;
+    position: absolute;
+    z-index: 4;
+    top: -0.4rem;
+    width:180px;
+    height:30px;
+    background:transparent;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input[type=checkbox]#copyrightToggle:checked ~ span.copyright-rhs--arrow {
+
+    transform: rotate(180deg);
+} 
+
+.copyright-rhs--arrow {
+    position: absolute;
+    top: -5px;
+    left: 10rem;
+}
+
+input[type=checkbox]#copyrightToggle:checked ~ .copyright--moneys {
+    display: block;
+}
+
+.copyright--moneys {
+    display: none;
+    position: absolute;
+    top: -315px;
+    left: 0px;
+    background-color: #F7FFF7;
+
+}
+
+.copyright-moneys--container {
+    border: 1px solid black;
+    height: 300px;
+    width:  180px;
+    overflow-x: scroll;
+}
+
+.copyright-moneys--container > * {
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+
+
+
+/* end of footer-row -- copyright */
+
+
+@media(min-width: 1024px){
+    /* start of footer-row -- subscribe */
+    .footer-row.footer-row.footer-row--subscribe {
+        padding: 0.5em 1rem;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .footer-row--subscribe p {
+        flex: 1;
+    }
+
+    .subscribe-form {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /* start of footer-row--links */
+    .footer-row.footer-row--links {
+        grid-template-columns: repeat(5, 1fr);
+        border-bottom: 1px solid black;
+    }
+
+    .footer-row.footer-row--links > * {
+        border: 1px solid black;
+       
+    }
+    .footer-row--copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    .copyright--rhs {
+        padding-right: 1rem;
+    }
+}
