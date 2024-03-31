@@ -8,6 +8,7 @@
     right: 0;
     background-color: #F7FFF7;
     z-index: 3;
+ 
 }
 
 .header-sticky--container {
@@ -114,7 +115,7 @@ span#northEastArrow::after {
     width:120px;
     height:30px;
     background:transparent;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     cursor: pointer;
 }
 
@@ -138,7 +139,7 @@ span#northEastArrow::after {
 
 .checkedContainer {
     display: none;
-    border-top: 1px solid black;
+    border-top: 2px solid black;
     border-bottom: 2px solid black;
     position: absolute;
     top: 3.8rem;

@@ -28,7 +28,7 @@
     width:84px;
     height:30px;
     background:transparent;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     cursor: pointer;
 }
 
@@ -49,23 +49,32 @@
     min-width: 375px;
     height: 800px;
     background-color: #F7FFF7;
+    font-weight: 700;
     
-    border-right: 1px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
     transition-duration: 0.5s;
     z-index: 5;
+    opacity: 0;
 }
 
 
 #headerMobileMenu input[type=checkbox]#headerMobileMenuToggle:checked ~ .menuSlideOut {
     left: 0;
+    opacity: 1;
 }
 
 .menuSlideOut-row {
     padding: 0.5em;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+    border-right: 0;
+    border-left: 0;
+}
+.menuSlideOut-row:last-child {
+    border-bottom: 2px solid black;
 }
 
 .menuSlideOut-row.flexed {

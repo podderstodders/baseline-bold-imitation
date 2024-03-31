@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/checkbox-mobileMenuToggle.css">
+    <link rel="stylesheet" href="./css/checkbox-cartMenuToggle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/gallery-swipper.css">
 </head>
 <body>
     <div id="root">
-        <article class="annoucement-row">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ratione beatae rem! Accusantium quibusdam, corrupti mollitia aliquam alias maxime placeat, saepe volupta</p>
-        </article>
+        
         <header class="header--sticky">
             <div class="header-sticky--container">
                 <div class="header-logo">
@@ -34,7 +35,7 @@
                             <div class="menuSlideOut">
                                 <div class="menuSlideOut--container">
                                     <div class="menuSlideOut-row">
-                                        <p>Click the Menu word to close<span id="northEastArrow"></span></p>
+                                        <p>Click the <span class="spicyred">Menu</span> word to close<span id="northEastArrow"></span></p>
                                     </div>
                                     <div class="menuSlideOut-row">
                                         the collection
@@ -60,7 +61,26 @@
                             </div>
                         </li>
                         <li><a href="#" role="link">Search</a></li>
-                        <li id="headerCartMenu"><a href="#" role="link">Cart (0)</a></li>
+                        <li id="headerCartMenu">
+                            <input type="checkbox" name="" id="headerMobileCartToggle">
+                            <label for="" id="menuPlus">Cart</label>
+                            <div class="cartSlideOut">
+                                <div class="cartSlideOut--container">
+                                    <div class="cartSlideOut--container__header">
+                                        Click the <span class="spicyred">Cart</span> word to close
+                                    </div>
+                                    <div class="cartSlideOut--container__row larger">
+                                        YOUR CART
+                                    </div>
+                                    <div class="cartSlideOut--container__row">
+                                        <p>YOUR CART IS CURRENTLY EMPTY</p>
+                                    </div>
+                                    <div class="cartSlideOut--container__row">
+                                        <a href="#">shop now <span id="subscribeArrow">&#8594;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="header-tabletlist">
@@ -115,7 +135,26 @@
                         <li><a href="#" role="link">editorials</a></li>
                         <li><a href="#" role="link">about</a></li>
                         <li><a href="#" role="link">search</a></li>
-                        <li><a href="#" role="link">cart (0)</a></li>
+                        <li id="headerCartMenu">
+                            <input type="checkbox" name="" id="headerMobileCartToggle">
+                            <label for="" id="menuPlus">Cart</label>
+                            <div class="cartSlideOut">
+                                <div class="cartSlideOut--container">
+                                    <div class="cartSlideOut--container__header">
+                                        Click the Cart word to close
+                                    </div>
+                                    <div class="cartSlideOut--container__row larger">
+                                        YOUR CART
+                                    </div>
+                                    <div class="cartSlideOut--container__row">
+                                        <p>YOUR CART IS CURRENTLY EMPTY</p>
+                                    </div>
+                                    <div class="cartSlideOut--container__row">
+                                        <a href="#">shop now <span id="subscribeArrow">&#8594;</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                         
                     </ul>
                 </div>
@@ -159,6 +198,132 @@
                 <div class="app-row--header">
                     <h2>nEw AdDiTiONs</h2>
                 </div>
+                <div class="gallery-swip--swipper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-1.jpg" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-2.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-3.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-2.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-3.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-1.jpg" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-3.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-2.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-1.jpg" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-2.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-3.webp" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swipper-slide--image">
+                                <img src="./assets/swipper-1.jpg" alt="">
+                            </div>
+                            <div class="swipper-slide--description">
+                                <div>Lorem ipsum dolor sit amet</div>
+                                <div>$580.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-mover">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-buttons">
+                        <div class="swiper-buttons--prev">
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <div class="swiper-buttons--next">
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="swipper-handler--spot"></div>
+                </div>
             </div>
             <div class="app-row image-row">
                 <div class="image-row--grid">
@@ -179,9 +344,11 @@
                       <div class="image-row--offsetText">
                             <h2>THE FLOWER COLLECTION</h2>
                             <p>We're very fortunate to have a great collection of flower art available.</p>
+                            <p>Right click the video to play!</p>
                             <div class="image-row--offsetText__button">
                                 <a href="#">shop now <span id="subscribeArrow">&#8594;</span></a>
                             </div>
+                            
                       </div>
                 </div>
             </div>
@@ -446,10 +613,10 @@
             </div>
             <div class="footer-row footer-row--links">
                 <div class="links-logo">
-                    logo goes here
+                    <img src="./assets/MoFA(1).svg" alt="">
                 </div>
                 <div class="links-statement">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis porro voluptate mollitia, delectus consequuntur suscipit sapiente similique, aliquid nesciunt aut impedit reiciendis sed vitae eveniet hic. Dolores amet ad non?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt magnam incidunt cupiditate eos aspernatur voluptatem saepe, cum ipsa possimus laborum?</p>
                 </div>
                 <div class="links-list">
                     
@@ -650,5 +817,22 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper1 = new Swiper(".gallery-swip--swipper", {
+        loop: true,
+        slidesPerView: "auto",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
