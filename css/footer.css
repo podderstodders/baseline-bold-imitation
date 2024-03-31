@@ -1,11 +1,8 @@
 
-.footer {
-    
-}
 /* start of footer-row--subscribe block */
 .footer-row.footer-row--subscribe {
     
-    background-color: rgb(97, 255, 92);
+    background-color: #61ff5c;
     padding: 1em 0.5em;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -23,7 +20,7 @@
     background-color: transparent;
     border-bottom: 2px solid black;
 
-    padding-top: 5px;
+    padding-top: 9px;
     font-weight: 800;
 }
 .subscribe-form input[type=email]::placeholder {
@@ -44,7 +41,7 @@
     font-weight: 700;
     text-transform: uppercase;
     text-decoration-thickness: 2px;
-    text-underline-offset: 9px;
+    text-underline-offset: 8.55px;
     white-space: nowrap;
 }
 
@@ -100,6 +97,7 @@
 /* start of footer-row -- copyright */
 
 .footer-row--copyright {
+    border-top: 1px solid black;
     position: relative;
     text-transform: uppercase;
     padding: 1em 0.5em;
@@ -145,7 +143,7 @@ input[type=checkbox]#copyrightToggle:checked ~ span.copyright-rhs--arrow {
 .copyright-rhs--arrow {
     position: absolute;
     top: -5px;
-    left: 10rem;
+    left: 9rem;
 }
 
 input[type=checkbox]#copyrightToggle:checked ~ .copyright--moneys {
@@ -207,6 +205,7 @@ input[type=checkbox]#copyrightToggle:checked ~ .copyright--moneys {
        
     }
     .footer-row--copyright {
+        border-top: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -214,5 +213,10 @@ input[type=checkbox]#copyrightToggle:checked ~ .copyright--moneys {
  
     .copyright--rhs {
         padding-right: 1rem;
+    }
+
+    .copyright-rhs--arrow {
+  
+        left: 10rem;
     }
 }

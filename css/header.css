@@ -7,11 +7,12 @@
     left: 0;
     right: 0;
     background-color: #F7FFF7;
+    z-index: 3;
 }
 
 .header-sticky--container {
     position: relative;
-    border: 1px solid black;
+    border: 2px solid black;
     border-left: none;
     border-right: none;
     display: flex;

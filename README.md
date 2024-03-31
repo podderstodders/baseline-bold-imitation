@@ -15,3 +15,13 @@ Toggle functionalities:
 2. Header Mobile Menu sliding 
 3. Footer currency toggle 
 4. Cart Menu Toggle (in progress)
+5. popular work sort by toggle 
+
+3rd Party JS libraries:
+
+1. swiper.js
+
+
+Cool things I've learned:
+
+for autoplay to work, it should have muted attribute followed autoplay. 
