@@ -24,6 +24,9 @@
     justify-content: space-between;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.87rem;
 }
 
 .swiper-slide:nth-child(n+1) {
@@ -60,4 +63,12 @@
 .swiper-buttons--next {
     position: absolute;
     left: 3rem;
+}
+
+@media(min-width: 1024px){
+    .swiper-slide .swipper-slide--description {
+       
+        font-size: 1.125rem;
+    }
+    
 }
