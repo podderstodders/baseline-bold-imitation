@@ -14,6 +14,7 @@
     content: '+';
     top: -7.5px;
     right: -14px;
+    font-weight: 700;
     
 }
 
@@ -44,9 +45,9 @@
 .menuSlideOut {
  
     position: absolute;
-    left: -380px;
+    left: -360px;
     top: 3.84rem;
-    min-width: 375px;
+    min-width: 360px;
     height: 800px;
     background-color: #F7FFF7;
     font-weight: 700;
@@ -89,3 +90,4 @@
     font-weight: 700;
     font-size: 1.5rem;
 }
+
